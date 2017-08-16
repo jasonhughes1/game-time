@@ -1,9 +1,9 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-var Block = require('../lib/Block');
+var Brick = require('../lib/Brick');
 
-describe('Block', function() {
+describe('Brick', function() {
   context('with default attributes', function() {
     // Your tests here...
   });
