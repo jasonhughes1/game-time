@@ -1,1 +1,1 @@
-require('./Block-test')
+require('./Brick-test')
