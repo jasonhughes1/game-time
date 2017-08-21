@@ -3,10 +3,11 @@ var assert = chai.assert;
 
 var Brick = require('../lib/Brick.js');
 
-describe('Brick', function() {
-  context('', function() {
-    // Your tests here...
-  });
+describe('brick test', function() {
+  it('should be a function', function() {
+    const brick = new Brick();
+
+  })
 
   it('Brick should have a default width of 75 and height of 25', function() {
     const brick = new Brick ();
@@ -15,5 +16,7 @@ describe('Brick', function() {
     assert.equal(brick.height, 25);
 
   })
+
+
 
 });

@@ -4,14 +4,17 @@ var assert = chai.assert;
 var Paddle = require('../lib/Paddle.js');
 
 
-describe('Paddle', function() {
-  // let Paddle;
+describe('Paddle test', function() {
+  it('should be a function', function() {
+    const paddle = new Paddle();
 
-  it('Paddle should have a default width of 100 and height of 15', function() {
+  })
+
+  it('Paddle should have a default width of 100 and height of 12', function() {
     const paddle = new Paddle ();
 
     assert.equal(paddle.width, 100);
-    assert.equal(paddle.height, 15);
+    assert.equal(paddle.height, 12);
 
   })
 
