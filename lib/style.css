@@ -20,7 +20,7 @@ body {
 }
 
 #start-container {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   width: 400px;
 }
@@ -37,9 +37,20 @@ body {
   margin-top: 1%;
   text-decoration: none;
   text-align: center;
-  width: 40%;
+  width: 33%;
 }
 
 #start-button:hover {
   background: #E400D0;
+}
+
+#score-box {
+  display: inline-block;
+  width : 33%;
+  margin: 0 auto;
+  color: orange;
+}
+
+#score-number {
+  font-size: 24px;
 }
