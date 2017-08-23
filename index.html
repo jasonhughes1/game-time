@@ -7,13 +7,19 @@
   <title>BREAKOUT</title>
 </head>
 <body>
+  <h1 class="title">BREAKOUT!!!</h1>
   <canvas id = "myCanvas" width = "900" height = "600" style="border: 1px solid black;"></canvas>
-  <div id = "score-box">
-    <p id = "score-number">Score: 0</p>
-  </div>
-  <div id="start-container">
-    <button id="start-button" type="button">Start Game</button>
-  </div>
+  <article id = "bottom-container">
+    <div id = "level-box">
+      <p id = "level-number">Level: 1</p>
+    </div>
+    <div id = "start-container">
+      <button id = "start-button" type="button">Start Game</button>
+    </div>
+    <div id = "lives-box">
+      <p id = "lives-number">Lives: 3</p>
+    </div>
+  </article>
   <script src="main.bundle.js"></script>
 </body>
 </html>
