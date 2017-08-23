@@ -11,12 +11,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.title {
+  font-size: 40px;
+  text-align: center;
+  color: orange;
+}
+
 #myCanvas {
   background-color: rgba(0, 0, 0, .9);
   display: block;
   border-radius: 2px;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+#bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 900px;
 }
 
 #start-container {
@@ -44,13 +57,20 @@ body {
   background: #E400D0;
 }
 
-#score-box {
+#level-box,
+#lives-box {
   display: inline-block;
   width : 33%;
   margin: 0 auto;
   color: orange;
 }
 
-#score-number {
-  font-size: 24px;
+#level-number,
+#lives-number {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+#lives-number {
+  float: right;
 }
