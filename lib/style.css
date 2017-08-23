@@ -47,10 +47,11 @@ body {
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 auto;
-  margin-top: 1%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-decoration: none;
   text-align: center;
-  width: 33%;
+  width: 40%;
 }
 
 #start-button:hover {
@@ -60,7 +61,7 @@ body {
 #level-box,
 #lives-box {
   display: inline-block;
-  width : 33%;
+  width : 30%;
   margin: 0 auto;
   color: orange;
 }
@@ -68,7 +69,7 @@ body {
 #level-number,
 #lives-number {
   font-size: 35px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 #lives-number {
