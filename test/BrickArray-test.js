@@ -7,14 +7,19 @@ var BrickArray = require('../lib/BrickArray.js');
 describe('brickArray test', function() {
   it('should be a function', function() {
     const brickArray = new BrickArray();
+  });
 
-  })
-
-  it ('should start out with an empty array', function() {
+  it('BrickArray should start out with an empty array', function() {
     const BrickArray = new BrickArray ();
 
-    assert.equal(BrickArray.brickField === [])
+    assert.equal(brickArray.brickField === [])
+  })
 
-  });
+  it('BrickArray should popluate', function() {
+    const BrickArray = new BrickArray ();
+
+    assert.equal(typeof brickArray.populateArray, 'function');
+  })
+
 
 })

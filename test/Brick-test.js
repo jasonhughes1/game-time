@@ -9,7 +9,7 @@ describe('brick test', function() {
 
   })
 
-  it('Brick should have a default width of 75 and height of 25', function() {
+  it('Brick should have a default width of 100 and height of 20', function() {
     const brick = new Brick ();
 
     assert.equal(brick.width, 100);
@@ -17,6 +17,9 @@ describe('brick test', function() {
 
   })
 
+  it('Brick should have a draw method', function() {
+    const brick = new Brick ();
 
-
+    assert.equal(typeof brick.draw, 'function');
+  })
 });
