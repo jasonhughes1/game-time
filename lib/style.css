@@ -51,10 +51,10 @@ body {
   margin-bottom: 10px;
   text-decoration: none;
   text-align: center;
-  width: 25%;
+  width: 15%;
 }
 
-#Reset {
+#reset-button {
   display: block;
   background: #1EC242;
   border-radius: 8px;
@@ -67,10 +67,11 @@ body {
   margin-bottom: 10px;
   text-decoration: none;
   text-align: center;
-  width: 40%;
+  width: 15%;
 }
 
-#start-button:hover {
+#start-button:hover,
+#reset-button:hover {
   background: #E400D0;
 }
 
