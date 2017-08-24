@@ -25,25 +25,29 @@ describe('ball test', function() {
 
   })
 
-  it('Ball should be drawn', function() {
-    const ball = new Ball(450, 565);
+  it('Ball should have a draw method', function() {
+    const ball = new Ball ();
 
-    assert.equal()
+    assert.equal(typeof ball.draw, 'function');
   })
 
-  it('Ball should bounce off top and bottom of canvas', function() {
-    const ball = new Ball(795);
-    let ballMoveOnY = ball.moveY;
+  it('Ball should have a bounce off walls method', function() {
+    const ball = new Ball ();
 
-    ball.bounceWalls(800);
-    assert.equal(ball.moveY === -ballMoveOnY, false);
+    assert.equal(typeof ball.bounceWalls, 'function');
   })
 
-  it('Ball should bounce off the paddle', function() {
-    const ball = new Ball(400);
-    let ballHitsPaddle = ball.moveY;
+  it('Ball should have a bounce off paddle method', function() {
+    const ball = new Ball ();
 
-    ball.bouncePaddle(14);
-    assert.equal(ball.moveY === -ballHitsPaddle, false);
+    assert.equal(typeof ball.bouncePaddle, 'function');
+
+  })
+
+  it('Ball should have the ability to reset', function () {
+    const ball = new Ball ();
+
+    assert.equal(typeof ball.resetBall, 'function');
+
   })
 })
