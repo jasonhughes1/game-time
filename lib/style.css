@@ -54,6 +54,22 @@ body {
   width: 25%;
 }
 
+#Reset {
+  display: block;
+  background: #1EC242;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+}
+
 #start-button:hover {
   background: #E400D0;
 }
