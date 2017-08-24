@@ -51,7 +51,7 @@ body {
   margin-bottom: 10px;
   text-decoration: none;
   text-align: center;
-  width: 40%;
+  width: 25%;
 }
 
 #Reset {
@@ -74,20 +74,16 @@ body {
   background: #E400D0;
 }
 
-#level-box,
-#lives-box {
-  display: inline-block;
-  width : 30%;
-  margin: 0 auto;
-  color: orange;
-}
-
 #level-number,
 #lives-number {
   font-size: 35px;
   margin-top: 10px;
+  display: inline-block;
+  width : 14%;
+  margin: 0;
+  margin-top: 10px;
+  color: orange;
 }
 
 #lives-number {
-  float: right;
 }
