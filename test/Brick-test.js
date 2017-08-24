@@ -12,8 +12,8 @@ describe('brick test', function() {
   it('Brick should have a default width of 75 and height of 25', function() {
     const brick = new Brick ();
 
-    assert.equal(brick.width, 75);
-    assert.equal(brick.height, 25);
+    assert.equal(brick.width, 100);
+    assert.equal(brick.height, 20);
 
   })
 
