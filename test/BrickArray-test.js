@@ -1,10 +1,10 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-
-
 const BrickArray = require('../lib/BrickArray.js');
 const Ball = require('../lib/Ball.js');
+const Game = require('../lib/Game.js');
+const Paddle = require('../lib/Paddle.js');
 
 describe('brickArray test', function() {
   it('should be a function', function() {
@@ -31,14 +31,13 @@ describe('brickArray test', function() {
   })
 
   it('Ball should break bricks when they collide', function() {
-    const brickArray = new BrickArray(10, 10);
-    const ball = new Ball (11, 11);
+    const game = new Game ();
+    game.brickArray.populateArray();
+    game.ball.x = 50;
+    game.ball.y = 20;
 
-
-    brickArray.breakBricks(ball)
-    assert.equal(ball.x, 11)
-    assert.equal(ball.y, 11)
-    assert.equal(brickArray.r, 10)
-    assert.equal(brickArray.c, 10)
+    assert.equal(game.brickArray.brickField.length === 24, true)
+    game.brickArray.breakBricks(game.brickArray.brickField, game.ball);
+    assert.equal(game.brickArray.brickField.length === 23, true)
   })
 })
